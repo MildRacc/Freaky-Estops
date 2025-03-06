@@ -1,4 +1,4 @@
-# FreezyEStops - Raspberry Pi Version
+# FreakyEStops - Raspberry Pi Version
 
 A Raspberry Pi implementation of the emergency stop system originally developed for ESP32.
 
@@ -30,25 +30,25 @@ cd WiringPi
 ./build
 ```
 
-### Build and Install FreezyEStops
+### Build and Install FreakyEStops
 
 ```bash
-git clone https://github.com/yourusername/FreezyEStops
-cd FreezyEStops
+git clone https://github.com/MildRacc/Freaky-Estops
+cd Freaky-Estops
 make
 sudo make install
 ```
 
 ## Running as a Service
 
-To run FreezyEStops as a background service on boot:
+To run FreakyEStops as a background service on boot:
 
 ```bash
 make service
-sudo cp freezy-estop.service /etc/systemd/system/
+sudo cp freaky-estop.service /etc/systemd/system/
 sudo systemctl daemon-reload
-sudo systemctl enable freezy-estop.service
-sudo systemctl start freezy-estop.service
+sudo systemctl enable freaky-estop.service
+sudo systemctl start freaky-estop.service
 ```
 
 ## Usage
@@ -59,4 +59,4 @@ The system monitors the emergency stop button state and performs these actions:
 
 ## Customization
 
-Edit the `freezy_config.h` file to change pin assignments and other settings.
+Edit the `freaky_config.h` file to change pin assignments and other settings.
